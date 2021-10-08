@@ -24,13 +24,20 @@
             </div>
             <div class="form-wrapper">
                 <div class="logo-wrapper">
-                    <img class="logo" src="/img/logo.svg" alt="">
+                    <img class="logo" src="./img/logo.svg" alt="">
                 </div>
                 
-                <form class="form">
-                    <input type="email" placeholder="Enter email address">
+                <form id="Form" class="form">
+                    <input id="emailField" type="email" onkeydown="checkEmail()">
+                    <span id="emailPlaceholder" class="email-placeholder">Enter Email Address</span>
+                    <div id="email-validations"></div>
+
                     <div class="password-wrapper">
-                        <input  id="pass" type="password" placeholder="Enter Password">
+
+                        <input  id="pass" type="password">
+                        <span id="passPlaceholder" class="password-placeholder">Enter Password</span>
+                        <div id="password-validations"></div>
+
                         <div class="eyeball">
                             <img onclick="showHide()" class="invisible" src="img/Vector.png">
                             <img onclick="showHide()" class="hide" src="img/eye.png">
