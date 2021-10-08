@@ -120,25 +120,40 @@ input::placeholder{
     /* opacity: 50%; */
     text-transform: uppercase;
     letter-spacing: 2;
-}
-.password-placeholder{
-
-        position: absolute;
-        top: 21px;
-        left:22px;
-        z-index: 9;
-        transition: 0.3s ease-in;
-        pointer-events: none;
-        color: #5d677f85;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 700;
-        font-size: 11px;
-        /* opacity: 50%; */
-        text-transform: uppercase;
-        letter-spacing: 2;
+    
 }
 
-input:focus ~ .password-placeholder, .password-placeholder:focus ~ .password-placeholder{
+#email-validations, #password-validations{
+    font-size: 11;
+    color: #FF0F66;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-left: 5px;
+
+}
+#email-validations{
+    margin-top: -10px;
+}
+#password-validations{
+    margin-top: 5px;
+}
+
+
+input:focus ~ .email-placeholder, input:not(:focus):valid ~ .email-placeholder, .email-placeholder:focus ~ .email-placeholder
+{
+    top: 5px;
+    left: 17px;
+    background-color: #fff;
+    padding: 0px 5px;
+    color: #F5B118
+    
+
+}
+
+
+
+input:focus ~ .password-placeholder, input:not(:focus):valid ~ .password-placeholder, .password-placeholder:focus ~ .password-placeholder
+{
     top: -5px;
     left: 17px;
     background-color: #fff;
@@ -150,14 +165,22 @@ input:focus{
     border-color: #F5B118
 }
 
-input:focus ~ .email-placeholder, .email-placeholder:focus ~ .email-placeholder{
-    top: 5px;
-    left: 17px;
-    background-color: #fff;
-    padding: 0px 5px;
-    color: #F5B118
-    
 
+.password-placeholder{
+
+    position: absolute;
+    top: 21px;
+    left:22px;
+    z-index: 9;
+    transition: 0.3s ease-in;
+    pointer-events: none;
+    color: #5d677f85;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    /* opacity: 50%; */
+    text-transform: uppercase;
+    letter-spacing: 2;
 }
 
 button[type="submit"]{

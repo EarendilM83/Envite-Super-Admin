@@ -28,13 +28,13 @@
                 </div>
                 
                 <form id="Form" class="form">
-                    <input id="emailField" type="email" onkeydown="checkEmail()">
+                    <input id="emailField" type="text" required>
                     <span id="emailPlaceholder" class="email-placeholder">Enter Email Address</span>
                     <div id="email-validations"></div>
 
                     <div class="password-wrapper">
 
-                        <input  id="pass" type="password">
+                        <input  id="pass" type="password" required>
                         <span id="passPlaceholder" class="password-placeholder">Enter Password</span>
                         <div id="password-validations"></div>
 
@@ -45,7 +45,7 @@
                         </div>
                     </div>
                    
-                    <button type="submit">Sign-in</button>
+                    <button id="submitBtn" type="submit">Sign-in</button>
                 </form>
                 <div class="link-wrapper">
                     <a class="forgot-password" href="#">forgot password?</a>
