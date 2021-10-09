@@ -1,60 +1,69 @@
 <!-- <!DOCTYPE html> -->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/styles.css">
-   
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <div class="wrapper">
-        <div class="background">
-                <!-- ]leaving this as an empty background wrapper -->
+      <div class="background">
+        <!-- ]leaving this as an empty background wrapper -->
+      </div>
+      <div class="content-wrapper">
+        <div class="text-wrapper">
+          <h1>Welcome home sir</h1>
+          <h2>Please authenticate</h2>
+          <p>
+            You have landed on Envite Super User Prohibited area. Provide admin
+            <br />login and password. Otherwise you shell not pass!
+          </p>
         </div>
-        <div class="content-wrapper">
-            <div class="text-wrapper">
-                <h1>Welcome home sir</h1>
-                <h2>Please authenticate</h2>
-                <p>You have landed on Envite Super User Prohibited area. Provide admin <br>login and password. Otherwise you shell not pass!</p>
+        <div class="form-wrapper">
+          <div class="logo-wrapper">
+            <img class="logo" src="./img/logo.svg" alt="" />
+          </div>
+
+          <form id="Form" class="form">
+            <input id="emailField" type="text" required />
+            <span id="emailPlaceholder" class="email-placeholder"
+              >Enter Email Address</span
+            >
+            <div id="email-validations"></div>
+
+            <div class="password-wrapper">
+              <input id="pass" type="password" required />
+              <span id="passPlaceholder" class="password-placeholder"
+                >Enter Password</span
+              >
+              <div id="password-validations"></div>
+
+              <div class="eyeball">
+                <img
+                  onclick="showHide()"
+                  class="invisible"
+                  src="img/Vector.png"
+                />
+                <img onclick="showHide()" class="hide" src="img/eye.png" />
+              </div>
             </div>
-            <div class="form-wrapper">
-                <div class="logo-wrapper">
-                    <img class="logo" src="./img/logo.svg" alt="">
-                </div>
-                
-                <form id="Form" class="form">
-                    <input id="emailField" type="text" required>
-                    <span id="emailPlaceholder" class="email-placeholder">Enter Email Address</span>
-                    <div id="email-validations"></div>
 
-                    <div class="password-wrapper">
-
-                        <input  id="pass" type="password" required>
-                        <span id="passPlaceholder" class="password-placeholder">Enter Password</span>
-                        <div id="password-validations"></div>
-
-                        <div class="eyeball">
-                            <img onclick="showHide()" class="invisible" src="img/Vector.png">
-                            <img onclick="showHide()" class="hide" src="img/eye.png">
-                            
-                        </div>
-                    </div>
-                   
-                    <button id="submitBtn" type="submit">Sign-in</button>
-                </form>
-                <div class="link-wrapper">
-                    <a class="forgot-password" href="#">forgot password?</a>
-                    <span class="need-help">Need Help? <a class="contact-us" href="#">Contact Us</a></span>
-                </div>
-               
-            </div>
+            <button id="submitBtn" type="submit">Sign-in</button>
+          </form>
+          <div class="link-wrapper">
+            <a class="forgot-password" href="#">forgot password?</a>
+            <span class="need-help"
+              >Need Help? <a class="contact-us" href="#">Contact Us</a></span
+            >
+          </div>
         </div>
+      </div>
     </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

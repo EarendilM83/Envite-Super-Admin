@@ -1,249 +1,236 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@300;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@300;700&display=swap");
 
-.wrapper{
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    /* background-color: lightblue; */
+.wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  /* background-color: lightblue; */
 }
 
 .background {
-    background-image: url(../img/background.png);
-    height: 840px;
-    width: 100%;
+  background-image: url(../img/background.png);
+  height: 840px;
+  width: 100%;
 }
-.content-wrapper{
-    position: absolute;
-    width: 100%;
-    height: 200px;
-    /* border: 2px solid red; */
-    top: 0px;
-    display: flex;
-    justify-content: space-around;
-
-}
-
-.text-wrapper{
-    margin-top: 175px;
-    margin-left: 132px;
+.content-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  /* border: 2px solid red; */
+  top: 0px;
+  display: flex;
+  justify-content: space-around;
 }
 
-h1{
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    font-size: 64px;
-    font-weight: 700;
-}
-    
-h2{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 39px;  
+.text-wrapper {
+  margin-top: 175px;
+  margin-left: 132px;
 }
 
-h1,h2 {
-    line-height: 90px;
-}
-p{
-    font-family: 'Inter', sans-serif;
-    line-height: 147.3%;
-    font-weight: 400;
+h1 {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 64px;
+  font-weight: 700;
 }
 
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 39px;
+}
+
+h1,
+h2 {
+  line-height: 90px;
+}
+p {
+  font-family: "Inter", sans-serif;
+  line-height: 147.3%;
+  font-weight: 400;
+}
 
 /* form styling */
 
-.form-wrapper{
-    background-color: fff;
-    width: 520px;
-    height: 760px;
-    /* border: 2px solid red; */
-    margin-top: 160px;
-    border-radius: 14px;
-    box-shadow: 12px 12px 50px 1px rgba(0, 0, 0, .2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+.form-wrapper {
+  background-color: fff;
+  width: 520px;
+  height: 760px;
+  /* border: 2px solid red; */
+  margin-top: 160px;
+  border-radius: 14px;
+  box-shadow: 12px 12px 50px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.logo-wrapper{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.logo-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-.logo{
-    margin-top: 75px;
-    /* border:1px solid red; */
-    
+.logo {
+  margin-top: 75px;
+  /* border:1px solid red; */
 }
-.form{
-    position: relative;
-    margin-top: 98px;
-    display: flex;
-    flex-direction: column;
-    height: 259px;
-    width: 402px;
-    justify-content: space-around;
+.form {
+  position: relative;
+  margin-top: 98px;
+  display: flex;
+  flex-direction: column;
+  height: 259px;
+  width: 402px;
+  justify-content: space-around;
 }
-input{
-    width: 400px;
-    height: 56px;
-    /* background-color: red; */
-    border-radius: 4px;
-    border: 1px solid #D0D3DA;
-    padding: 22px 22px 22px;
-    letter-spacing: 4px;
+input {
+  width: 400px;
+  height: 56px;
+  /* background-color: red; */
+  border-radius: 4px;
+  border: 1px solid #d0d3da;
+  padding: 22px 22px 22px;
+  letter-spacing: 4px;
 }
-input::placeholder{
-    color: #5D677F;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 11px;
-    opacity: 50%;
-    text-transform: uppercase;
-    letter-spacing: 2;
+input::placeholder {
+  color: #5d677f;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  opacity: 50%;
+  text-transform: uppercase;
+  letter-spacing: 2;
 }
-.email-placeholder{
-
-    position: absolute;
-    top: 33px;
-    left:22px;
-    z-index: 9;
-    transition: 0.3s ease-in;
-    pointer-events: none;
-    color: #5d677f85;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 11px;
-    /* opacity: 50%; */
-    text-transform: uppercase;
-    letter-spacing: 2;
-    
+.email-placeholder {
+  position: absolute;
+  top: 33px;
+  left: 22px;
+  z-index: 9;
+  transition: 0.3s ease-in;
+  pointer-events: none;
+  color: #5d677f85;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  /* opacity: 50%; */
+  text-transform: uppercase;
+  letter-spacing: 2;
 }
 
-#email-validations, #password-validations{
-    font-size: 11;
-    color: #FF0F66;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    margin-left: 5px;
-
+#email-validations,
+#password-validations {
+  font-size: 11;
+  color: #ff0f66;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin-left: 5px;
 }
-#email-validations{
-    margin-top: -10px;
+#email-validations {
+  margin-top: -10px;
 }
-#password-validations{
-    margin-top: 5px;
-}
-
-
-input:focus ~ .email-placeholder, input:not(:focus):valid ~ .email-placeholder, .email-placeholder:focus ~ .email-placeholder
-{
-    top: 5px;
-    left: 17px;
-    background-color: #fff;
-    padding: 0px 5px;
-    color: #F5B118
-    
-
+#password-validations {
+  margin-top: 5px;
 }
 
-
-
-input:focus ~ .password-placeholder, input:not(:focus):valid ~ .password-placeholder, .password-placeholder:focus ~ .password-placeholder
-{
-    top: -5px;
-    left: 17px;
-    background-color: #fff;
-    padding: 0px 5px;
-    color: #F5B118
-
-}
-input:focus{
-    border-color: #F5B118
+input:focus ~ .email-placeholder,
+input:not(:focus):valid ~ .email-placeholder,
+.email-placeholder:focus ~ .email-placeholder {
+  top: 5px;
+  left: 17px;
+  background-color: #fff;
+  padding: 0px 5px;
+  color: #f5b118;
 }
 
-
-.password-placeholder{
-
-    position: absolute;
-    top: 21px;
-    left:22px;
-    z-index: 9;
-    transition: 0.3s ease-in;
-    pointer-events: none;
-    color: #5d677f85;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 11px;
-    /* opacity: 50%; */
-    text-transform: uppercase;
-    letter-spacing: 2;
+input:focus ~ .password-placeholder,
+input:not(:focus):valid ~ .password-placeholder,
+.password-placeholder:focus ~ .password-placeholder {
+  top: -5px;
+  left: 17px;
+  background-color: #fff;
+  padding: 0px 5px;
+  color: #f5b118;
+}
+input:focus {
+  border-color: #f5b118;
 }
 
-button[type="submit"]{
-    width: 400px;
-    height: 56px;
-    background-color: #F5B118;
-    color: #fff;
-    text-transform: uppercase;
-    border: none;
-    font-size:18px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-
-    
-}
-.link-wrapper{
-    height: 196px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* background-color: red; */
-}
-.forgot-password{
-    text-transform: uppercase;
-    color:#F5B118;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    line-height: auto;
-    margin-top: 25px;
-}
-.need-help{
-    font-family: 'Open Sans', sans-serif;
-    color: #A2A8B6;
-    font-size: 14px;
-}
-.contact-us{
-    color:#F5B118;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-
+.password-placeholder {
+  position: absolute;
+  top: 21px;
+  left: 22px;
+  z-index: 9;
+  transition: 0.3s ease-in;
+  pointer-events: none;
+  color: #5d677f85;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  /* opacity: 50%; */
+  text-transform: uppercase;
+  letter-spacing: 2;
 }
 
-.password-wrapper{
-    position: relative;
+button[type="submit"] {
+  width: 400px;
+  height: 56px;
+  background-color: #f5b118;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
 }
-.eyeball{
-    position: absolute;
-    right: 15px;
-    top:18px;
+.link-wrapper {
+  height: 196px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+.forgot-password {
+  text-transform: uppercase;
+  color: #f5b118;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  line-height: auto;
+  margin-top: 25px;
+}
+.need-help {
+  font-family: "Open Sans", sans-serif;
+  color: #a2a8b6;
+  font-size: 14px;
+}
+.contact-us {
+  color: #f5b118;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
 }
 
-.show, .hide{
-    position: absolute;
-    top: 0;
-    right: 2px;
-    cursor: pointer;
+.password-wrapper {
+  position: relative;
 }
-.invisible{
-    display: none;
+.eyeball {
+  position: absolute;
+  right: 15px;
+  top: 18px;
 }
-.visible{
-    display: block;
+
+.show,
+.hide {
+  position: absolute;
+  top: 0;
+  right: 2px;
+  cursor: pointer;
+}
+.invisible {
+  display: none;
+}
+.visible {
+  display: block;
 }
